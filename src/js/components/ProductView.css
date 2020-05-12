@@ -1,0 +1,31 @@
+.productViewInfoTitle {
+    font-size: 16px;
+    line-height: 22px;
+    margin: auto 0;
+}
+
+.productViewInfoData {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.productViewInfoPriceInfo {
+    font-size: 22px;
+}
+
+.priceMarginLeft {
+    margin-left: 4px;
+}
+
+.productInfoTitleMarginLeft {
+    margin-left: 32px;
+}
+
+.productViewOptionWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.productViewInfoCommissionMargin {
+    margin-left: 16px;
+}

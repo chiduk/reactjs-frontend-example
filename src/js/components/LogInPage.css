@@ -1,0 +1,313 @@
+.logInBody {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 800px;
+    width: 90%;
+
+    height: 80vh;
+    max-height: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+.logInPageLogo {
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 50px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.logInPageLogo img {
+    height: 50px;
+    object-fit: cover;
+}
+
+.logInFunctionContainer {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+
+    height: calc(100% - 50px - 32px);
+
+
+}
+
+.easyLogInContainer {
+    flex-grow: 2;
+    height: calc(100% - 24px);
+
+    width: calc(50% - 1px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.emailLogInContainer {
+    flex-grow: 2;
+    height: calc(100% - 24px);
+
+    width: calc(50% - 1px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.middleLine {
+    width: 1px;
+    height: calc(100% - 24px);
+    background-color: #282c34;
+    flex-grow: 0;
+}
+
+.logInBody .easyLogInButton {
+    width: 70%;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.logInBody .easyLogInButton img {
+    object-fit: fill;
+    font-family: 'object-fit: fill;';
+}
+
+.naverLogInButton {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.kakaoLogInButton {
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.kakaoLogInButton img {
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    width: 100%;
+}
+
+.naverLogInButton img{
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    width: 100%;
+}
+
+
+/*#kakao-login-btn {*/
+/*    object-fit: cover;*/
+/*}*/
+
+.easyLogInButton:hover {
+    cursor: pointer;
+}
+
+.easyLogInButtonImage {
+    width: 60px;
+    height: 60px;
+    flex-grow: 0;
+}
+
+.easyLogInButtonImage img{
+
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+
+}
+
+.faceBookButton {
+    background-color: #3b579d;
+}
+
+.googleButton {
+    background-color: #da4b3e;
+}
+
+.naverButton {
+    background-color: #32bd24;
+}
+
+.kakaoTalkButton {
+    background-color: #fee638;
+}
+
+.easyLogInButtonText {
+
+    flex-grow: 2;
+    line-height: 60px;
+    color: white;
+    text-align: center;
+}
+
+
+.kakaoTalkText {
+    color: #000000;
+}
+
+.emailLogInElement {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.emailLogInInput {
+    width: 100%;
+    height: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+
+.signUpClick p{
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #FF0000;
+    font-size: 18px;
+}
+
+.signUpClick:hover {
+    cursor: pointer;
+}
+
+.logInButtonContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.logInButton {
+    background-color: #FF0000;
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+    height: 48px;
+
+}
+
+.logInButton:hover {
+    cursor: pointer;
+}
+
+.logInButton a{
+    line-height: 48px;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-weight: bold;
+}
+
+.KeepLoggedIn {
+    margin-left: 16px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.KeepLoggedIn input {
+    height: 48px;
+}
+
+.KeepLoggedIn a {
+    margin-left: 8px;
+    line-height: 48px;
+}
+
+.lostLogInInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lostInfoText:hover {
+    cursor: pointer;
+}
+
+
+
+
+.lostLogInInfoLine {
+    background-color: #282c34;
+    height: 24px;
+    width: 1px;
+}
+
+@media (max-width: 740px) {
+    .logInBody {
+        overflow: hidden;
+        position: relative;
+        height: 500px;
+        /*height: max-content;*/
+        /*float: top;*/
+        /*margin-bottom: 32px;*/
+        overflow-y: scroll;
+    }
+
+    .logInFunctionContainer {
+        /*flex-direction: column;*/
+        display: block;
+        /*overflow-x: hidden;*/
+        overflow: auto;
+        width: 100%;
+        max-height: 9999px;
+
+        flex-wrap: nowrap;
+
+        padding-bottom: 24px;
+
+    }
+
+    .logInFunctionContainer::-webkit-scrollbar {
+
+    }
+
+    .easyLogInContainer {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+
+        justify-content: space-evenly;
+
+    }
+
+    .emailLogInContainer {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        /*flex-shrink: 0;*/
+    }
+
+    .middleLine {
+        width: 0px;
+        height: 0px;
+        background-color: #282c34;
+        flex-grow: 0;
+        margin-right: auto;
+        margin-left: auto;
+        visibility: hidden;
+    }
+}
+

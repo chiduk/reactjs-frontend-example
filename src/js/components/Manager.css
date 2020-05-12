@@ -1,0 +1,1695 @@
+.managerBody {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+.hideView {
+    /*visibility: hidden;*/
+    display: none;
+}
+
+.leftTap {
+    width: 200px;
+    height: calc(100vh - 62px);
+    background-color: #E2E2E2;
+    overflow-y: scroll;
+}
+
+.rightSideView {
+
+    width: calc(100% - 200px);
+    height: calc(100vh - 62px);
+    overflow: hidden;
+    overflow-y: scroll;
+
+    position: sticky;
+
+
+}
+
+
+.leftTapButtons {
+    color: #3B3B3B;
+    background-color: #E2E2E2;
+    width: 100%;
+    height: 64px;
+}
+
+.leftTapButtonWhite {
+    background-color: white;
+}
+
+.leftTapButtons:hover {
+    cursor: pointer;
+}
+
+.leftTapButtons a {
+    line-height: 63px;
+    margin-left: 32px;
+}
+
+.leftTapButtonBottomLine {
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tapBody {
+    /*top: 0;*/
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.addProductView {
+
+}
+
+.productName {
+    width: 100%;
+    border-style: none;
+    font-size: 24px;
+}
+
+.productName:focus {
+    outline: none;
+}
+
+.productManagementView {
+    overflow-x: scroll;
+}
+
+.revenueReportView {
+    /*background-color: #fee638;*/
+}
+
+.paymentReportView {
+    /*background-color: #32bd24;*/
+}
+
+.productMatchingView {
+    background-color: white;
+}
+
+.orderCancelReturnView {
+    /*background-color: cadetblue;*/
+}
+
+.shippingManagementView {
+    background-color: white;
+}
+
+.productManagementTable {
+    display: grid;
+    display: -ms-grid;
+    overflow-x: scroll;
+    position: relative;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-collapse: collapse;
+    white-space: nowrap;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+table.productManagementTable th{
+    display: inline-block;
+    overflow: hidden;
+    width: 155px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background: black;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+table.productManagementTable td {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.1rem;
+    width: 155px;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.userManagement {
+
+    display: grid;
+    display: -ms-grid;
+    overflow-x: scroll;
+    position: relative;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-collapse: collapse;
+    white-space: nowrap;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+table.userManagement th{
+    display: inline-block;
+    overflow: hidden;
+    width: 155px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background: black;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+table.userManagement td {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.1rem;
+    width: 155px;
+    height: 50px;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+table.userManagement th:nth-child(1) {
+    width: 200px;
+}
+
+table.userManagement th:nth-child(2) {
+    width: 250px;
+}
+
+table.userManagement th:nth-child(6) {
+    width: 250px;
+}
+
+table.userManagement td:nth-child(1) {
+    width: 200px;
+}
+
+table.userManagement td:nth-child(2) {
+    width: 250px;
+}
+
+table.userManagement td:nth-child(6) {
+    width: 250px;
+}
+
+.productMatchingManage {
+    grid-template-columns:
+            minmax(150px, 1fr)
+            minmax(100px, 1fr)
+            minmax(200px, 1fr)
+            minmax(150px, 1fr)
+            minmax(150px, 1fr)
+            minmax(150px, 1fr)
+            minmax(150px, 1fr)
+            minmax(150px, 1fr)
+            minmax(150px, 1fr)
+            minmax(150px, 1fr)
+            minmax(150px, 1fr)
+            minmax(150px, 1fr);
+}
+
+.tableBox .revenueReportTable {
+
+    display: grid;
+    display: -ms-grid;
+    overflow-x: scroll;
+    position: relative;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-collapse: collapse;
+    white-space: nowrap;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+table.revenueReportTable th{
+    display: inline-block;
+    overflow: hidden;
+    width: 155px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background: black;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+table.revenueReportTable td {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.1rem;
+    width: 155px;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+.resize-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0;
+    width: 3px;
+    cursor: col-resize;
+}
+
+.resize-handle:hover,
+.header--being-resized .resize-handle {
+    opacity: 0.5;
+}
+
+th:hover .resize-handle {
+    opacity: 0.3;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #808080;
+}
+
+tr:nth-child(even) td {
+    background: #f8f6ff;
+}
+
+tr:nth-child(odd) td {
+    background: #E2E2E2;
+}
+
+.tooltip {
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*border-bottom: 1px dotted black;
+     !* If you want dots under the hoverable text *!*/
+    /*width: 0;*/
+    /*height: 0;*/
+}
+
+.productCellID {
+    display: flex;
+    flex-direction: column;
+    /*height: 44px;*/
+}
+
+.managingProductID {
+    text-decoration: underline;
+    color: blue;
+}
+
+.toolTipText {
+    margin-left: 0px;
+    visibility: hidden;
+    width: 150px;
+    background-color: white;
+    color: #282c34;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.productCellID:hover {
+    color: #FF0000;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.productCellID:hover .toolTipText {
+    visibility: visible;
+}
+
+.click{
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+
+}
+
+.clickable {
+    text-decoration: underline;
+    color: #1e4e9e;
+}
+
+.userApplyCell .click .clickable {
+    width: 70px;
+}
+
+.userMangementUserID {
+    text-decoration-line: underline;
+    color: #FF0000;
+}
+
+.click .toolTipText {
+    margin-left: 20px;
+    visibility: hidden;
+    width: 150px;
+    background-color: white;
+    color: #282c34;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.click:hover {
+    cursor: pointer;
+    color: #FF0000;
+    text-decoration-line: underline;
+}
+
+.click:hover .toolTipText {
+    visibility: visible;
+}
+
+.managementSearchSection {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 16px;
+}
+
+.managementUserTypeSelectButton {
+    margin-left: 16px;
+    color: #FF0000;
+    display: flex;
+    flex-direction: column;
+}
+
+.managementUserTypeSelectButton:hover {
+    cursor: pointer;
+}
+
+.managementSearchSection a{
+    line-height: 32px;
+}
+
+
+
+.managementUserTypeSelectImg {
+    margin-left: 8px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.managementUserTypeSelectImg.arrowDown {
+    transform: rotate(180deg);
+}
+
+.managementUserSearchInput {
+    margin-left: 0px;
+}
+
+.searchTypeState {
+    margin-left: 8px;
+}
+
+.searchTypeSelectButtonContainer {
+    position: absolute;
+    width: 150px;
+    height: 0px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+
+}
+
+
+
+.searchTypeSelectButtonContainer.selectButtonGrow {
+    height: max-content;
+}
+
+.userTypeButton {
+    padding: 4px 16px;
+}
+
+.userTypeButton:hover {
+    color: #3B3B3B;
+}
+
+.userApplyCell {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+}
+
+.approveContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    margin-left: 10px;
+}
+
+.wrapper {
+    /*position: relative;*/
+}
+
+.relavetiveWrapper {
+    position: relative;
+    overflow: visible;
+}
+
+.approveButtonListContainer {
+    margin-top: 4px;
+    position: relative;
+    overflow: hidden;
+    /*visibility: hidden;*/
+    max-height: 0px;
+    background-color: white;
+
+    transition: height 3s ease-in-out;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.approveContainerOpen {
+    animation: openApproveContainer 0.3s;
+    max-height: max-content;
+}
+
+@keyframes openApproveContainer {
+
+    from {
+        max-height: 0px;
+    }
+    to {
+        max-height: 100px;
+    }
+
+}
+
+.approveContainerClose {
+
+    animation: closeApproveContainer 0.3s;
+    max-height: 0px;
+}
+
+@keyframes closeApproveContainer {
+
+    from {
+        max-height: 100px;
+    }
+    to {
+        max-height: 0px;
+    }
+
+}
+
+
+
+.approveButton {
+    padding: 2px 16px;
+    color: #282c34;
+}
+
+.approveButton:hover {
+    cursor: pointer;
+    color: #FF0000;
+}
+
+
+.userApplyApproveButton {
+    background-color: #FF0000;
+    height: 25px;
+    width: 110px;
+    border-radius: 10px;
+    padding: 0px 5px;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.userApplyApproveButton a{
+    margin: auto;
+}
+
+.userApplyApproveButton:hover {
+    cursor: pointer;
+}
+
+.addTagButton {
+    margin-left: 16px;
+    height: 36px;
+}
+
+.addTagButton:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.addTagButton img {
+    width: 28px;
+    height: 100%;
+    object-fit: scale-down;
+    margin-bottom: 4px;
+}
+.addTagButton a {
+    margin-left: 8px;
+    line-height: 36px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.productSearchTagWrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hashTag {
+    color: #FF0000;
+}
+
+.hashClose {
+    transform: rotate(45deg);
+    margin-bottom: 4px;
+}
+
+.productMatchingProductListWrapper {
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    width: 95%;
+
+}
+
+.matchingProductWrapper {
+    display: flex;
+    flex-direction: row;
+
+    /*width: 100%;*/
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 32px 16px;
+
+    padding: 16px;
+
+    border-radius: 10px;
+
+}
+
+.matchingProductImageNameWrapper {
+    display: flex;
+    flex-direction: row;
+    /*background-color: #FF0000;*/
+    width: 50%;
+}
+
+.matchingProductImg {
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.matchingProductImg img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.matchingProductImg:hover{
+    cursor: pointer;
+}
+
+.matchingConfirmInfoWrapper {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.matchingConfirmInfoWrapper:first-child {
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+
+.matchingButtonWraper {
+
+    flex-grow: 1;
+}
+
+
+.matchingProductInfo {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+/*.matchingProductInfo:hover{*/
+/*    cursor: pointer;*/
+/*}*/
+
+.matchingProductConfirmWrapper {
+    margin-left: auto;
+}
+
+.matchingPeriod input{
+    max-width: 40px;
+}
+
+.productFirstInfo {
+    margin-left: 8px;
+}
+
+.matchiConfirmButtonWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.matchingProductImageNameWrapper .productName {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.matchingProductImageNameWrapper .productName a {
+    line-height: 18px;
+    background-color: #FF0000;
+    word-break: keep-all;
+}
+
+.socialLink {
+    text-decoration-line: underline;
+    color: #FF0000;
+}
+
+.socialLink:hover {
+    cursor: pointer;
+}
+
+.matchingButtonWrapper {
+    margin-left: auto;
+    width: max-content;
+}
+
+.matchOptionButtonWrapper {
+    width: 100%;
+}
+
+.productMatchConfirmInfoWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.matchingButton {
+    border-color: #d11b32;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    color: #d11b32;
+    height: max-content;
+    padding: 8px 16px;
+
+    text-align: center;
+
+    width: 150px;
+
+
+
+    word-break: keep-all;
+
+}
+
+
+.matchingButton:hover {
+    cursor: pointer;
+}
+
+.matchOption {
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: max-content;
+
+
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: auto;
+
+    position: absolute;
+
+}
+
+.matchOption:hover {
+    cursor: pointer;
+}
+
+.matchiOptionButton {
+    color: #FF0000;
+    padding: 8px 16px;
+    word-break: keep-all;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.matchiOptionButton:hover {
+    color: #282c34;
+}
+
+.matchingProductUserInfo {
+    font-size: 20px;
+}
+
+.matchingProductUserInfo:hover{
+    color: #FF0000;
+    cursor: pointer;
+}
+
+.newOrderState {
+    margin-top: 16px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.newOrderCount {
+    color: #FF0000;
+    display: inline-block;
+    text-decoration-line: underline;
+    margin-left: 8px;
+}
+
+.newOrderCount:hover {
+    cursor: pointer;
+}
+
+
+
+.shippingButtons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.shippingButton {
+    width: max-content;
+    height: max-content;
+    padding: 4px 16px;
+    color: #FF0000;
+    border-style: solid;
+    border-color: #FF0000;
+    border-width: 1px;
+    border-radius: 25px;
+    margin-right: 16px;
+}
+
+.shippingButton:hover {
+    cursor: pointer;
+}
+
+.shippingDataTableContainer {
+    height: 550px;
+    border-width: 1px;
+    border-color: #FF0000;
+    border-style: solid;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.shippingManagementTable {
+    display: grid;
+    display: -ms-grid;
+    overflow: scroll;
+
+    position: relative;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-collapse: collapse;
+    white-space: nowrap;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 478px;
+}
+
+table.shippingManagementTable th{
+    display: inline-block;
+
+    width: 155px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background: black;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+table.shippingManagementTable td {
+    display: inline-block;
+
+    font-size: 1.1rem;
+    width: 155px;
+    height: 115px;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+table.shippingManagementTable th:nth-child(1) {
+    width: 50px;
+}
+
+table.shippingManagementTable th:nth-child(3) {
+    width: 250px;
+}
+
+table.shippingManagementTable th:nth-child(8) {
+    width: 250px;
+}
+
+table.shippingManagementTable th:nth-child(9) {
+    width: 250px;
+}
+
+table.shippingManagementTable th:nth-child(14) {
+    width: 300px;
+}
+
+
+table.shippingManagementTable td:nth-child(1) {
+    width: 50px;
+}
+
+table.shippingManagementTable td:nth-child(3) {
+    width: 250px;
+}
+
+table.shippingManagementTable td:nth-child(8) {
+    width: 250px;
+}
+
+table.shippingManagementTable td:nth-child(9) {
+    width: 250px;
+}
+
+table.shippingManagementTable td:nth-child(14) {
+    width: 300px;
+    overflow: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.tableNoneInput {
+    width: 155px;
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.orderListCell {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.orderListCount {
+    text-decoration-line: underline;
+    color: #FF0000;
+}
+
+.orderListCount:hover {
+    cursor: pointer;
+}
+
+.orderListItemsView {
+    /*overflow: hidden;*/
+    position: absolute;
+    z-index: 999;
+    /*max-height: 0px;*/
+    /*max-width: max-content;*/
+}
+
+
+
+.cvsFileSelector {
+    display: none;
+}
+
+.uploadButton {
+    position: relative;
+    top: 0px;
+}
+
+.graphWrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.graphContainer {
+    margin-top: 16px;
+    width: 100%;
+
+}
+
+.graphTapTop {
+    margin-top: 16px;
+}
+
+.graphTapButtonWidth {
+    width: calc(50%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableBox {
+    border-style: solid;
+    border-color: #FF0000;
+    border-width: 1px;
+    width: 90%;
+    height: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tableDataTypeSelectWrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tableDataTypeButton {
+    border-style: solid;
+    border-color: #FF0000;
+    border-width: 1px;
+    border-radius: 25px;
+    padding: 8px 16px;
+    color: #FF0000;
+    margin-right: 16px;
+}
+
+.tableDataTypeButton:hover{
+    cursor: pointer;
+}
+
+.tableDataTypePaymentButton {
+    border-style: solid;
+    border-color: #FF0000;
+    width: 60px;
+    border-width: 1px;
+    border-radius: 25px;
+    padding: 8px;
+    color: #FF0000;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.tableDataTypePaymentButton:hover{
+    cursor: pointer;
+}
+
+/*.revenueReportTable {*/
+/*    margin-top: 16px;*/
+/*    grid-template-columns:*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr);*/
+/*}*/
+
+/*.paymentReportTable {*/
+/*    margin-top: 16px;*/
+/*    grid-template-columns:*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr);*/
+
+/*}*/
+
+
+
+.paymentReportTable {
+    display: grid;
+    display: -ms-grid;
+    overflow-x: scroll;
+    position: relative;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-collapse: collapse;
+    white-space: nowrap;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+table.paymentReportTable th{
+    display: inline-block;
+    overflow: hidden;
+    width: 155px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background: black;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+table.paymentReportTable td {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.1rem;
+    width: 155px;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+
+
+.payableInfluencer {
+    display: grid;
+    display: -ms-grid;
+    overflow-x: scroll;
+    position: relative;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-collapse: collapse;
+    white-space: nowrap;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+table.payableInfluencer th{
+    display: inline-block;
+    overflow: hidden;
+    width: 155px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background: black;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+table.payableInfluencer td {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.1rem;
+    width: 155px;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+/*.payableSellerTable {*/
+
+/*    margin-top: 16px;*/
+/*    grid-template-columns:*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr)*/
+/*            minmax(150px, 1fr);*/
+
+/*}*/
+
+
+.payableSellerTable {
+    display: grid;
+    display: -ms-grid;
+    overflow-x: scroll;
+    position: relative;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border-collapse: collapse;
+    white-space: nowrap;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    /*grid-template-columns:*/
+    /*        minmax(150px, 1fr)*/
+    /*        minmax(200px, 1fr)*/
+    /*        minmax(150px, 1fr)*/
+    /*        minmax(150px, 1fr)*/
+    /*        minmax(150px, 1fr)*/
+    /*        minmax(150px, 1fr)*/
+    /*        minmax(150px, 1fr)*/
+    /*        minmax(150px, 1fr)*/
+    /*        minmax(150px, 1fr)*/
+    /*        minmax(150px, 1fr)*/
+
+    /*        minmax(150px, 1fr);*/
+}
+
+table.payableSellerTable th{
+    display: inline-block;
+    overflow: hidden;
+    width: 155px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background: black;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+table.payableSellerTable td {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.1rem;
+    width: 155px;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.paymentStatusWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+.paymentStatusText {
+
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+
+.payableTable.grab {
+    cursor: grabbing;
+}
+
+.paymentViewTypeButton {
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 16px;
+
+}
+
+.paymentViewTypeButton:hover {
+    cursor: pointer;
+}
+
+.paymentViewTypeStateTriangle {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+    object-fit: scale-down;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.rotatePaymentViewTriangle {
+    transform: rotate(180deg);
+}
+
+.datePickerView {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0vh;
+
+    transition-property: height;
+    transition: 0.5s ease-in-out;
+
+    overflow: hidden;
+
+}
+
+.calendarOpen {
+    height: 100vh;
+}
+
+
+
+.selectPeriodForReport {
+    margin-right: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.selectPeriodForReport:hover {
+    cursor: pointer;
+
+}
+
+.selectPeriodButton {
+
+    color: #FF0000;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #FF0000;
+    border-width: 1px;
+    padding: 4px 8px;
+
+}
+
+.selectPeriodButton:hover {
+    background-color: #FF0000;
+    color: white;
+}
+
+
+.inflencerSearchResultBox {
+    position: absolute;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 9;
+    background-color: white;
+    margin-top: 8px;
+    display: none;
+}
+
+.inflencerSearchResultBox.opendInfluencerSearchResult {
+    max-height: 999px;
+    display: block;
+}
+
+.searchResultElement {
+    padding: 4px 8px;
+}
+
+.searchResultElement:hover {
+    cursor: pointer;
+}
+
+.revenueReportSearchInput {
+    margin-left: 16px;
+    margin-top: 16px;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: #3b3b3b;
+    border-style: solid;
+    padding: 4px 8px;
+    width: 20%;
+}
+
+.revenueReportSearchInput input {
+    outline: none;
+    border: none;
+}
+
+.revenueSelectedResultWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 16px;
+}
+
+.totalRevenueNumber {
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-top: 16px;
+    width: max-content;
+}
+
+.resultSelected {
+    margin-top: 16px;
+    background-color: #E2E2E2;
+    border-radius: 25px;
+    padding: 4px 8px;
+    margin-right: 16px;
+}
+
+.resultSelected img {
+    margin-left: 4px;
+    margin-top: auto;
+    margin-bottom:4px;
+    width: 18px;
+    height: 18px;
+    object-fit: scale-down;
+    transform: rotate(45deg);
+}
+
+.resultSelected img:hover {
+    cursor: pointer;
+}
+
+.viewTypeToggleButton {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    padding: 0px 16px;
+    margin-top: 8px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.viewTypeButtonGrow {
+    max-height: 999px;
+}
+
+.paymentViewOptionButton {
+    margin-left: 0px;
+    margin-right: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.paymentViewOptionButton:hover {
+    cursor: pointer;
+}
+
+.paymentViewTypeButton {
+    padding: 8px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.managerMenuButton {
+    width: 0px;
+    height: 0px;
+    display: none;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.managerMenuButton:hover {
+    cursor: pointer;
+}
+
+.managerMenuButton img {
+    width: 16px;
+    height: 16px;
+    object-fit: scale-down;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 8px;
+}
+
+.rotateTriangle {
+    transform: rotate(180deg);
+}
+
+
+.productViewModalWrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.3;
+}
+
+.productViewModalContainer {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+
+.excelDownLoadButton {
+    margin-left: 48px;
+    margin-bottom: 100px;
+}
+
+
+@media (max-width: 980px) {
+    .matchingProductInfo {
+        /*margin-top: 16px;*/
+    }
+
+    .matchingProductWrapper {
+        flex-direction: column;
+        /*width: 100%;*/
+    }
+
+    .productMatchConfirmInfoWrapper:first-child {
+
+        margin-bottom: 16px;
+
+    }
+
+    .matchingButtonWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .matchingButton {
+        width: 100%;
+    }
+
+}
+
+
+
+@media (max-width: 800px)  {
+
+    .managerBody {
+        flex-direction: column;
+    }
+
+    .managerMenuButton {
+        width: max-content;
+        height: max-content;
+        display: block;
+    }
+
+    .leftTap {
+        position: absolute;
+        z-index: 9;
+        height: 0px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: height 0.3s ease-in-out;
+    }
+
+    .growManagerMenuView {
+
+        height: max-content;
+
+    }
+
+    .graphWrapper {
+        display: none;
+    }
+
+    .marginTopZeroMatching {
+        margin-top: 0px;
+    }
+
+    .rightSideView {
+        width: 100%;
+    }
+
+    .tapBody {
+        width: 100%;
+    }
+
+    .matchingProductWrapper {
+        flex-direction: column;
+        /*width: 100%;*/
+    }
+
+    .matchingProductImageNameWrapper{
+        width: 100%;
+
+    }
+
+    /*.matchingButton {*/
+    /*    max-width: 50%;*/
+    /*    padding: 8px 16px;*/
+    /*}*/
+
+    /*.matchingButtonWraper .matchingButton:first-child {*/
+    /*    margin-right: 32px;*/
+    /*}*/
+
+
+    .productMatchConfirmInfoWrapper:first-child {
+
+        margin-bottom: 16px;
+
+    }
+
+
+    .matchOption {
+        width: 200px;
+        left: -50%;
+        right: -50%
+
+    }
+
+    .matchingButtonWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .matchingButton {
+        width: 100%;
+    }
+
+    .matchingProductInfo {
+        /*margin-top: 16px;*/
+    }
+
+    .matchingConfirmInfoWrapper {
+        width: 100%;
+    }
+
+    .matchiConfirmButtonWrapper {
+        margin-top: 16px;
+    }
+
+    .commissionRate{
+        display: inline-block;
+    }
+
+}
+
+
+
+
+
+
+

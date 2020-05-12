@@ -1,0 +1,58 @@
+.productContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+    background-color: white;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.productContainer:hover {
+    cursor: pointer;
+}
+
+.productContainer .priceInfo {
+    margin-left: auto;
+}
+
+.cardProductName a{
+    max-height: 1.6em;
+    text-overflow: ellipsis;
+}
+
+.commissionRate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    margin-right: 8px;
+    word-break: normal;
+    text-align: right;
+    max-width: calc(268px - 90px - 16px);
+    max-height: 2.8em;
+    margin-left: auto;
+
+}
+
+.commissionRate a{
+    max-height: 1.6em;
+    text-overflow: ellipsis;
+}
+
+.priceInfo a {
+    max-height: 1.6em;
+    text-overflow: ellipsis;
+}
+
+
+@media (max-width: 500px) {
+
+    .productContainer {
+        width: 100%;
+    }
+
+
+
+}

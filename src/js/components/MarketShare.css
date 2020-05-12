@@ -1,0 +1,302 @@
+.marketShareBody {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marketShareBody .feedTypeWrapper{
+    margin-top: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 400px;
+    width: 80%;
+}
+
+
+
+.feedOrderButtonWrapper {
+
+    margin-top: 16px;
+
+}
+
+.feedOrderTypeButton {
+    line-height: 24px;
+}
+
+.feedOrderTypeButton img {
+    width: 16px;
+    height: 16px;
+    object-fit: scale-down;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 8px;
+}
+
+.feedOrderTypeButton:hover {
+    cursor: pointer;
+}
+
+.typeButtonWrapper {
+    width: max-content;
+    max-height: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
+    z-index: 99;
+    background-color: white;
+    transition: height 0.3s ease-in-out;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #3B3B3B;
+    border-width: 0px;
+    margin-top: 8px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+
+
+.growButtonContainerHeight {
+    max-height: 999px;
+    border-width: 0px;
+}
+
+.typeButton {
+    padding: 16px 32px;
+}
+
+.typeButton:hover {
+    cursor: pointer;
+}
+
+.typeButton:last-child {
+    border-top-style: solid;
+    border-top-width: 0.4px;
+    border-top-color: grey;
+
+}
+
+.rotateTriangle {
+    transform: rotate(180deg);
+}
+
+.marketShareFeedBody {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.feedWidth {
+    width: calc((100%/3) - 24px);
+}
+
+
+.marketFeedStyle {
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 32px;
+}
+
+.marketFeedStyle:hover {
+    cursor: pointer;
+}
+
+.marketShareFeedBody .profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.userInfo img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.followButton {
+    margin-left: auto;
+}
+
+
+.marketFeedImg {
+    margin-top: 8px;
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+    height: max-content;
+}
+
+.marketFeedImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.marketFeedImg video {
+    width: 100%;
+    object-fit: cover;
+}
+
+.marketTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    word-break: keep-all;
+    line-height: 1.3em;
+}
+
+.marketFeedTime {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+.marketFeedTime .periodText {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.marketFeedTime .timeLineText {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+    word-break: keep-all;
+    line-height: 0.9em;
+}
+.curlyLine {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.alarmCount {
+    color: #FF0000;
+}
+
+.marketFeedMessage {
+    margin-top: 8px;
+    font-size: 16px;
+    word-break: keep-all;
+}
+
+.shareMarektProductlineSeparator {
+    width: 100%;
+    background-color: #3b3b3b;
+    height: 1px;
+    margin-top: 8px;
+}
+
+.marketFeedProduct {
+    margin-top: 16px;
+
+    width: 100%;
+    height: 80px;
+    /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);*/
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+.marketFeedProductImg {
+    background-color: #61dafb;
+    max-width: 35%;
+    margin-right: 8px;
+}
+
+.marketFeedProductImg img{
+    height: 80px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.marketProductInfo {
+    flex-shrink: 0;
+    width: max-content;
+
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.marketProductTitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 8px;
+    word-break: keep-all;
+    text-align: right;
+    max-width: calc(268px - 90px - 16px);
+    max-height: 2.8em;
+    margin-left: auto;
+}
+
+.marketProductPrice {
+    display: flex;
+    padding-left: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: medium;
+    justify-content: flex-end;
+    margin-top: auto;
+    color: #FF0000;
+    margin-right: 8px;
+}
+
+.marketFeedDiscountRate {
+    margin-right: 8px;
+}
+
+.marketSocialWrapper {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.marketSocialWrapper .marketSocial {
+    display: flex;
+    flex-direction: row;
+}
+
+.marketSocialWrapper .marketSocial img {
+    height: 24px;
+    width: 24px;
+    object-fit: scale-down;
+}
+
+.socialCount {
+    width: 50px;
+    margin-left: 8px;
+}
+
+.marketAlarmButton {
+    margin-left: auto;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+
+    .marketShareBody .feedTypeWrapper {
+        /*max-width: 600px;*/
+    }
+
+}

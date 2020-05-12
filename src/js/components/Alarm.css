@@ -1,0 +1,257 @@
+.alarmBody {
+    max-width: 800px;
+    width: 90%;
+    min-height: calc(100vh - 160px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.messageWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+
+.messageWrapper .profileImage {
+    margin-right: 0px;
+}
+
+.messageWrapper .profileImage img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.profileImage:hover {
+    cursor: pointer;
+}
+
+.userName {
+    font-weight: bold;
+}
+
+.userName:hover {
+    cursor: pointer;
+}
+
+.messageText {
+    width: calc(100% - 110px);
+    margin-left: 8px;
+    margin-right: 8px;
+    word-break: keep-all;
+}
+
+.alarmBody .messageContainer {
+    width: 100%;
+}
+
+.myProfileImage {
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+.myProfileImage:hover {
+    cursor: pointer;
+}
+
+.myProfileImage img {
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.replyButton {
+    margin-left: 8px;
+}
+
+.replyText {
+    margin-left: 8px;
+}
+
+.replyBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 8px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.replyBox.replyBoxGrow {
+    height: auto;
+}
+
+
+.replyTextArea {
+    width: 100%;
+}
+
+.replyTextArea textarea {
+
+    margin-top: 8px;
+
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #FF0000;
+    border-width: 1px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+
+.replyTextArea textarea:focus {
+    outline: none;
+}
+
+.replyBox img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.replySend {
+    margin-left: 16px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    align-self: flex-end;
+    color: #FF0000;
+}
+
+.replySend:hover {
+    cursor: pointer;
+}
+
+.replySend a {
+
+    vertical-align: bottom;
+
+}
+
+.messageContentImage img{
+    width: 70px;
+    height: 70px;
+
+}
+
+.messageContentImage:hover {
+    cursor: pointer;
+}
+
+
+
+.sentMessage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 8px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.sentReplyMessage {
+    white-space: pre;
+    align-self: center;
+}
+
+.sentReplyMessage a{
+    vertical-align: center;
+}
+
+.sentMessage.sendMessagePressed {
+    height: auto;
+}
+
+.sentReplyMessage:hover {
+    cursor: pointer;
+}
+
+.smallScreenProductImg {
+    display: none;
+    width: max-content;
+    height: max-content;
+}
+
+.smallScreenProductImg img{
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.smallScreenSendButton {
+    width: 0px;
+    height: 0px;
+    margin-top: 0px;
+    display: none;
+}
+
+.alarmProfileSection {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+
+
+@media (max-width: 600px) {
+    .messageWrapper .profileImage img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .messageText {
+        margin-right: 0px;
+    }
+
+    /*.smallScreenProductImg {*/
+    /*    display: block;*/
+    /*    width: 50px;*/
+    /*    height: 50px;*/
+    /*    background-color: #FF0000;*/
+    /*}*/
+
+
+
+
+    /*.smallScreenProductImg {*/
+    /*    display: block;*/
+    /*    width: 50px;*/
+    /*    height: 50px;*/
+    /*    background-color: #FF0000;*/
+    /*}*/
+
+
+
+    .replyTextArea {
+
+    }
+
+
+    .replySend {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    .smallScreenSendButton {
+        width: max-content;
+        height: max-content;
+        margin-left: auto;
+        margin-top: -2px;
+        display: block;
+    }
+
+    .smallScreenSendButtonClose {
+        width: 0px;
+        height: 0px;
+        margin-top: 0px;
+        display: none;
+    }
+}
+
+
+

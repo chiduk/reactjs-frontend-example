@@ -1,0 +1,175 @@
+.commentContainer {
+    /*max-width: 800px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+
+    /*width: 100%;*/
+
+    display: flex;
+    flex-direction: row;
+    /*align-items: flex-start;*/
+    /*width: 100%;*/
+    margin-top: 24px;
+    width: 100%;
+}
+.commentUserImg {
+    flex-grow: 0;
+    /*height: 60px;*/
+    /*width: 60px;*/
+}
+
+.commentUserImg img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.commentUserImg:hover {
+    cursor: pointer;
+}
+
+.commentUserName a {
+    word-wrap: break-word;
+    word-break: keep-all;
+    white-space: pre-wrap;
+    width: 100%;
+}
+
+.messageContainer {
+    flex-grow: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 8px;
+
+    width: calc(100% - 60px);
+}
+
+.commentUserNameText {
+    font-weight: bold;
+}
+
+.commentUserNameText:hover {
+    cursor: pointer;
+}
+
+.replyButton:hover {
+    cursor: pointer;
+}
+
+.replyButton img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.replyButtonText {
+    margin-left: 8px;
+}
+
+.replyInputContainer {
+    margin-top: 8px;
+
+    max-height: 0px;
+
+    overflow: hidden;
+    transition: max-height 0.5s;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.replyInputContainer.replyBoxOpen {
+    max-height: 508px;
+}
+
+.commentUserProfileImg {
+    height: 40px;
+    width: 40px;
+    flex-grow: 0;
+}
+
+.commentUserProfileImg img {
+
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.commentBoxContainer {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.replyInputBox {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FF0000;
+
+    min-height: 40px;
+    max-height: 500px;
+
+    margin-left: 8px;
+
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+
+
+.replyInputBox:focus {
+    outline: none;
+}
+
+
+
+.commentSendButton {
+    color: #FF0000;
+    text-align: right;
+}
+
+.commentSendButton:hover {
+    cursor: pointer;
+}
+
+.replyContainer {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.replyProfile {
+    width: 40px;
+    height: 40px;
+}
+
+.replyProfile img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 600px) {
+
+    .commentUserImg img {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

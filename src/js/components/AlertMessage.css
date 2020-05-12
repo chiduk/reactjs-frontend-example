@@ -1,0 +1,121 @@
+.alertBackGroundBody {
+
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+    z-index: 99999;
+
+}
+
+.alertBackGroundBody .alertMessageBackground {
+
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
+    opacity: 0.9;
+
+}
+
+
+
+.alertMessageBackground:hover {
+    cursor: pointer;
+}
+
+
+.alertBackGroundBody .messageContainer {
+    border-radius: 15px;
+    background-color: white;
+    max-width: 500px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.alertBackGroundBody .messageContainer .alertMessageContainer {
+    margin-left: 32px;
+    margin-right: 32px;
+    text-align: center;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: keep-all;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+
+}
+
+.yesNoWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.alertMessageContainer .alertTitle {
+    margin-top: 24px;
+}
+
+.alertMessageContainer .alertTitle h4 {
+    text-align: center;
+    color: #FF0000;
+}
+
+.alertMessageContainer .alertMessage {
+    margin-top: 16px;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: keep-all;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+
+}
+
+
+.messageContainer .alterCloseButton {
+    margin-top: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+    text-align: right;
+    background-color: #FF0000;
+    color: white;
+
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    border-radius: 15px;
+}
+
+.alterCloseButton:hover {
+    cursor: pointer;
+}
+

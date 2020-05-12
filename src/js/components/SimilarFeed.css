@@ -1,0 +1,218 @@
+
+.similarFeedCard {
+    border: none;
+    background-color: white;
+    vertical-align: top;
+
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 32px;
+
+    border-radius: 25px;
+
+    height: 630px;
+    width: 300px;
+    position: relative;
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.similarFeedCard:last-child {
+    margin-right: 0px;
+}
+
+.similarFeedCardProfileContainer {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    /*height: 50px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.similarFeedCardProfileInfo {
+    flex-grow: 9;
+}
+
+.similarFeedCardProfileInfo:hover {
+    cursor: pointer;
+}
+
+.similarFeedCardProfileImg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.similarFeedCardProfileName {
+    margin-left: 8px;
+    line-height: initial;
+}
+
+.similarFeedCardProfileName:hover{
+    cursor: pointer;
+}
+
+
+.similarFeedCardContentContainer {
+    margin-left: 16px;
+    margin-right: 16px;
+    white-space: initial;
+    /*overflow: hidden;*/
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: keep-all;
+    hyphens: auto;
+}
+
+.similarFeedCardContentContainer:hover {
+    cursor: pointer;
+}
+
+.similarFeedCardTitle {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: large;
+    line-height: 1.2em;
+    max-height: 2.4em;
+}
+
+.similarFeedCardTime {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    /*line-height: 20px;*/
+}
+
+.similarFeedCardTimeLine {
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    word-break: keep-all;
+}
+
+.similarFeedCardMessage {
+    margin-top: 5px;
+}
+
+.similarFeedCardMessage iframe {
+
+    padding: 0;
+
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+
+
+    position: relative;
+}
+
+.similarFeedCardMessage p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 2.4em;
+    overflow: hidden;
+    position: relative;
+    word-break: break-word;
+    line-height: 1.2em;
+}
+
+.similarFeedCardHashTagContainer {
+    /*display: inline-block;*/
+    margin-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #3b3b3b;
+    flex-direction: row;
+    overflow: hidden;
+    height: 24px;
+    text-overflow: ellipsis;
+}
+
+.similarFeedCardHashTag {
+    margin-right: 8px;
+}
+
+
+.similarFeedCardHashTagDiv {
+    margin-right: 8px;
+}
+
+.feedProductLineSeparator {
+    height: 0.7px;
+    width: calc(100% - 32px);
+    background-color: #3b3b3b;
+    /*margin-bottom: 0px;*/
+    position: absolute;
+    bottom: 100px;
+}
+
+.similarFeedCardProductContainer {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    position: absolute;
+    bottom: 16px;
+
+    width: 268px;
+    height: 70px;
+    background-color: white;
+
+    /*box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);*/
+}
+
+.similarFeedCardProductImg img {
+    width: 90px;
+    height: 70px;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.similarFeedCardProductInfo  {
+    /*width: 198px;*/
+    flex-grow: 9;
+
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+}
+
+.similarFeedCardProductName {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-weight: bold;
+    margin-right: 8px;
+    word-break: normal;
+    text-align: right;
+    max-width: calc(268px - 90px - 16px);
+    max-height: 2.8em;
+    margin-left: auto;
+
+}
+
+.similarFeedCardPriceContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: auto;
+    color: black;
+    margin-right: 8px;
+}
+
+.similarFeedCardDiscount {
+    margin-right: 8px;
+}
+
+

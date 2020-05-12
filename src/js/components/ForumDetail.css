@@ -1,0 +1,199 @@
+.forumDetailBody {
+
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+    /*display: flex;*/
+    /*flex-direction: column;*/
+
+    overflow: auto;
+    z-index: 99999;
+
+}
+
+.forumDetailBody .forumDetailBackGround {
+
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+
+    opacity: 0.9;
+
+}
+
+.forumDetailBackGround:hover {
+    cursor: pointer;
+}
+
+.forumDetailBody .forumDetailContainer {
+
+    max-width: 800px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, 0%);
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.forumCloseButton {
+    margin-top: 16px;
+    margin-left: auto;
+    height: max-content;
+    width: max-content;
+}
+
+.forumCloseButton:hover {
+    cursor: pointer;
+}
+
+.forumDetailView {
+    margin-top: 16px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.forumUserProfileContainer {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.forumDetailUserImage img {
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.forumUserName {
+    margin-left: 8px;
+}
+
+.forumUserName {
+    line-height: 54px;
+}
+
+.forumFollowButton {
+    line-height: 54px;
+    margin-left: auto;
+}
+
+.forumFollowButton:hover {
+    cursor: pointer;
+}
+
+
+.forumContentWrapper {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.forumContent:hover {
+    cursor: pointer;
+}
+
+.forumTitle {
+    margin-top: 16px;
+}
+
+.forumTitle a {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.forumContentWrapper .forumDetailText {
+    margin-top: 16px;
+}
+
+.forumDetailText a {
+    word-wrap: break-word;
+    word-break: keep-all;
+    white-space: pre-wrap;
+}
+
+.forumDetailDate {
+    margin-top: 8px;
+}
+
+.hashTagWrapper {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.forumCommentBoxContainer {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.forumWriterImage img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.forumCommentBoxWrap {
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.forumCommentInputBox {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FF0000;
+
+    min-height: 40px;
+    max-height: 500px;
+
+
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.forumCommentInputBox:focus {
+    outline: none;
+}
+
+.forumCommentSendButton {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: 8px;
+    color: #FF0000;
+}
+
+.forumCommentSendButton:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+

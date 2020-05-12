@@ -1,0 +1,702 @@
+.newPostBody {
+    max-width: 800px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newPostBody .profileInfo {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.newPostBody .profileInfo .profileImage img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: fill;
+
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
+    /*border-color: #282c34;*/
+
+}
+
+.newPostBody .profileInfo .profileName a{
+    margin-right: 16px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+.newPostBody .selectFeedTypeContainer {
+    margin-top: 24px;
+    width: max-content;
+}
+
+
+
+.newPostBody .feedTypeSelectButton {
+    font-size: 24px;
+}
+
+.feedTypeSelectButton:hover {
+    cursor: pointer;
+}
+
+.feedTypeContainer {
+    overflow: hidden;
+    max-height: 0px;
+    transition-property: height;
+    transition: max-height 0.5s ease-in-out;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.growSelectContainer {
+    max-height: 1000px;
+}
+
+.timeSelectorContainer {
+    width: max-content;
+    margin-left: 8px;
+}
+
+.timeSelectTextStyle {
+    font-size: 16px;
+}
+
+.timeSelectTextStyle:hover {
+    cursor: pointer;
+}
+
+.timeSelectButton {
+    padding: 8px 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #282c34;
+    width: 60px;
+}
+
+.timeSelectButton:first-child {
+    border-bottom-width: 0px;
+}
+
+.timeSelectButton:hover {
+    background-color: #FF0000;
+    color: white;
+    cursor: pointer;
+}
+
+.timeSelectTextStyle img {
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    margin-top: auto;
+    margin-bottom: 4px;
+    align-content: center;
+    vertical-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.feedTypeButton {
+    padding: 8px 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #282c34;
+    width: 175px;
+}
+
+.feedTypeButton:hover {
+    background-color: #FF0000;
+    color: white;
+    cursor: pointer;
+}
+
+.feedTypeButton:first-child {
+    border-bottom-width: 0px;
+}
+
+.feedTypeSelectButton img {
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+    margin-top: auto;
+    margin-bottom: 4px;
+    align-content: center;
+    vertical-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*.feedTypeSelectButton:hover img {*/
+/*    transform: rotate(180deg);*/
+/*}*/
+
+.rotateArrowImage {
+    transform: rotate(180deg);
+}
+
+.newPostBody .selectImageText {
+    margin-top: 24px;
+}
+
+.dataPickDiv {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.dataPickGrow {
+    max-height: 1000px;
+}
+
+.selectButton {
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.selectButton:hover {
+    cursor: pointer;
+}
+
+.selectButton:hover img {
+    transform: rotate(180deg);
+}
+
+.selectButton img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.newPostBody .selectImage {
+
+}
+
+.newPostBody .selectImage a {
+    font-weight: bold;
+    color: #FF0000;
+    font-size: 24px;
+}
+
+.newPostBody .datePickerView {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0vh;
+
+    transition-property: width, height;
+    transition: 0.5s ease-in-out;
+
+    overflow: hidden;
+
+}
+
+.newPostBody .calendarOpen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.newPostBody .blurBackGround {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.9;
+}
+
+
+.selectedDateForPost {
+    margin-top: 8px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectedDateTimeWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.selectedDateTimeWrapper:last-child {
+    margin-top: 24px;
+}
+
+.timeSelector {
+    display: flex;
+    flex-direction: row;
+}
+
+.timeSelector input {
+    width: 28px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.pmamSelector {
+    margin-left: 8px;
+}
+
+.hideTimeSelector {
+    visibility: hidden;
+}
+
+.newPostBody .imageArrayContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 100%;
+    /*height: 200px;*/
+}
+
+
+
+.scrollToSide {
+    overflow-x: scroll;
+}
+
+.newPostBody .uploadingImage {
+    margin-right: 0px;
+    /*position: relative;*/
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: max-content;
+    background-color: #61dafb;
+    user-select: none;
+}
+
+
+.newPostBody .uploadingImage:last-child {
+    margin-right: 0px;
+}
+
+
+/*.newPostBody .imageArrayContainer .uploadingImage {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+
+/*}*/
+
+.uploadingImage .selectedImage img{
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+    user-select: none;
+}
+
+/*.newPostBody .imageArrayContainer .deleteButton {*/
+/*    position: absolute;*/
+/*}*/
+
+.uploadingImage .deleteButton {
+    width: 40px;
+    height: 40px;
+    visibility: hidden;
+}
+
+.uploadingImage .deleteButton img{
+    object-fit: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.deleteButton img:hover {
+    cursor: pointer;
+}
+
+.newPostBody .imageArrayContainer .uploadingImage:hover .deleteButton {
+    visibility: visible;
+}
+
+.newPostBody .titleInput {
+
+    margin-top: 32px;
+    width: 100%;
+
+}
+
+
+.titleInput  {
+    height: 46px;
+    border: none;
+    font-size: 46px;
+    width: 100%;
+
+}
+
+.titleInput:focus {
+    outline: none;
+}
+
+.subTitleInput {
+    margin-top: 32px;
+    width: 100%;
+}
+.subTitleInput:focus {
+    outline: none;
+}
+
+.subTitleInput  {
+    border: none;
+    font-size: 32px;
+    width: 100%;
+}
+
+
+
+.paragraph {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.paragraph  {
+    border: none;
+    font-size: 20px;
+    width: 100%;
+}
+
+.paragraph:focus {
+    outline: none;
+}
+
+.addContentsTitle {
+    margin-top: 24px;
+}
+
+.addContentsTitle a{
+    color: #FF0000;
+}
+
+
+
+.newPostBody .plusButton img {
+    margin-top: 8px;
+    width: 24px;
+    height: 24px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+    /*margin-right: 32px;*/
+    /*object-fit: contain;*/
+}
+
+.newPostBody .plusButton img:hover {
+    cursor: pointer;
+    transform: rotate(315deg);
+}
+
+.newPostBody .tiltAddButton {
+    transform: rotate(45deg);
+}
+
+.addContentButton {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.addContentButton:hover {
+    cursor: pointer;
+}
+
+/*.addMoreContentsButtonWrapper .plusButton img {*/
+/*    transform: rotate(180deg);*/
+/*}*/
+
+/*.addMoreContentsButtonWrapper .plusButton {*/
+/*    display: inline-block;*/
+
+/*}*/
+
+/*.plusButton img {*/
+/*    width: 32px;*/
+/*    height: 32px;*/
+/*}*/
+
+
+.newPostBody .addMoreContentsButtonWrapper {
+    color: #FF0000;
+
+    max-width: 0px;
+    max-height: 0px;
+
+    transition: width 0.3s ease-in-out;
+
+    display: flex;
+    overflow: hidden;
+    /*flex-wrap: nowrap;*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    margin-top: 8px;
+
+}
+
+.newPostBody .growWidth {
+    max-width: calc(100% - 32px);
+    max-height: max-content;
+}
+
+
+
+.addButtonItems {
+    display: inline-block;
+    margin-left: 32px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.addButtonItems img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+
+}
+
+.addButtonItems a {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.newPostBody .addButton {
+    border-radius: 15px;
+
+    margin-top: 32px;
+    color: white;
+    background-color: #FF0000;
+    width: max-content;
+
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.addButton a {
+    font-size: 18px;
+}
+
+.addButton:hover {
+    cursor: pointer;
+}
+
+.addingContentsWrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 32px;
+
+}
+
+.addingContentsWrapper .addedContent {
+    flex: 1;
+    height: auto;
+    width: 100%;
+
+}
+
+.addedContent .subTitleInput {
+    margin-top: 0px;
+}
+
+.addedContent .paragraph {
+    margin-top: 0px;
+}
+
+.addContents img {
+
+    height: 70vh;
+    max-height: 800px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.addContents video {
+
+    /*height: 70vh;*/
+    /*max-height: 800px;*/
+    /*width: 100%;*/
+    /*object-fit: contain;*/
+
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+    max-height: 300px;
+}
+
+.addContentEditButtonWrapper {
+
+}
+
+
+.deleteContentButton {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+
+}
+
+.reSelectButton {
+    color: #FF0000;
+    margin-top: 16px;
+}
+
+.reSelectButton:hover {
+    cursor: pointer;
+}
+
+.deleteContentButton img{
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+.deleteContentButton img:hover {
+    cursor: pointer;
+}
+
+
+.newPostBody .saveButton {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+    text-align: center;
+    background-color: #FF0000;
+    color: white;
+    width: max-content;
+
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    border-radius: 15px;
+
+}
+
+.saveButton:hover {
+    cursor: pointer;
+}
+
+.newPostBody .hashTagAdded {
+    /*color: #FF0000;*/
+}
+
+.newPostBody .addedHashtagContainer {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.newPostBody .addedProductListView {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.addedProductListView .productContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+    background-color: white;
+    box-shadow: 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.productContainer:hover .hashClose {
+    visibility: visible;
+}
+
+
+.writeNewFeedProductListWrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.writeFeedProductCloseButton {
+    width: max-content;
+    height: max-content;
+    margin-left: 8px;
+}
+
+.writeFeedProductCloseButton:hover {
+    cursor: pointer;
+}
+
+.writeFeedProductCloseButton img {
+    width: 24px;
+    height: 24px;
+    transform: rotate(45deg);
+}
+
+
+@media (max-width: 600px) {
+
+
+
+    .uploadingImage .deleteButton {
+        width: 44px;
+        height: 44px;
+        visibility: visible;
+    }
+
+    .newPostBody .imageArrayContainer .deleteButton img{
+        width: 28px;
+        height: 28px;
+        object-fit: cover;
+    }
+
+    .writeNewFeedProductListWrapper {
+        width: 100%;
+    }
+
+    .newPostBody .addMoreContentsButtonWrapper {
+        flex-wrap: wrap;
+    }
+
+    .titleInput {
+        font-size: 30px;
+    }
+
+    .subTitleInput {
+        font-size: 22px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .addedProductListView .productContainer {
+        width: 100%;
+    }
+
+}
+

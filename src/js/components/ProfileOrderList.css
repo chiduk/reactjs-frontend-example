@@ -1,0 +1,61 @@
+.profileOrderItem {
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 40px;
+}
+
+.profileProductInfoWrap {
+    padding-top: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profileProductImage {
+
+
+}
+
+.profileProductImage img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profileProductInfo {
+    margin-left: 10px;
+}
+
+.profileProductName {
+    font-size: 22px;
+
+}
+
+.profileOrderListButton {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.orderListButton {
+    flex-grow: 1;
+    padding: 8px 32px;
+    margin-right: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FF0000;
+    margin-bottom: 16px;
+    color: #FF0000;
+    text-align: center;
+}
+
+.orderListButton {
+    cursor: pointer;
+}

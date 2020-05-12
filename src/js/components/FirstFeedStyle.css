@@ -1,0 +1,135 @@
+
+
+.firstFeedCardContainer {
+    /*background-color: #FF0000;*/
+}
+
+.firstFeedCardStyleBottomMargin {
+    margin-bottom: 32px;
+}
+
+.firstFeedProfileContainer {
+    padding-top: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.firstFeedProfileContainer:hover{
+    cursor: pointer;
+}
+
+.firstFeedUserImg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.firstFeedUserName {
+    margin-left: 8px;
+    font-weight: bold;
+    line-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.firstFeedContainer {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 0px;
+}
+
+.firstFeedFollowStat {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.firstFeedFollowStat:hover {
+    cursor: pointer;
+}
+
+.firstFeedStatComponentTitle {
+    flex-grow: 1;
+}
+
+.firstFeedStatNumber {
+    flex-grow: 9;
+    text-align: right;
+}
+
+.firstFeedStatNumber img {
+    width: 30px;
+    height: 30px;
+    object-fit: scale-down;
+}
+
+.forYouHashContainer {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    color: #FF0000;
+}
+
+.forYouHashTag {
+    margin-left: 8px;
+}
+
+.forYouInfluencerContainer {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.forYouInfluencerContainer:hover {
+    cursor: pointer;
+}
+
+
+.influencerInfoContainer {
+    flex-grow: 0;
+    line-height: 45px;
+}
+
+.influencerInfoContainer img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.influencerName {
+    flex-grow: 2;
+    line-height: 45px;
+    margin-left: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*text-align: left;*/
+}
+
+.influencerFollowButton {
+    flex-grow: 0;
+    line-height: 45px;
+}
+
+@media (max-width: 950px) {
+    .firstFeedCardContainer {
+
+    }
+}
+
+@media (max-width: 700px) {
+
+    .firstFeedCardContainer {
+        display: none;
+    }
+}
+

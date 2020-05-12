@@ -1,0 +1,606 @@
+.forumBody {
+    max-width: 1000px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.forumTagToggleButton {
+    margin-top: 16px;
+    display: none;
+}
+
+.forumTagToggleButton:hover {
+    cursor: pointer;
+    color: #FF0000;
+    width: max-content;
+    height: max-content;
+}
+
+.forumTagToggleButton img{
+    width: 16px;
+    height: 16px;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    object-fit: scale-down;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.forumTagToggleButton img.rotateForumTagButton {
+    transform: rotate(180deg);
+}
+
+.forumLeft {
+    margin-top: 24px;
+    width: 180px;
+
+}
+
+.tagElement {
+    margin-bottom: 8px;
+}
+
+.tagElement:hover {
+    cursor: pointer;
+}
+
+.forumRight {
+    margin-top: 24px;
+    width: calc(100% - 180px);
+}
+
+.viewAll {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.viewAllClicked {
+    color: gray;
+    font-weight: normal;
+}
+
+.viewOneTag {
+    margin-bottom: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition-property: margin-bottom, height;
+    transition: all 200ms ease-in-out;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.viewOneTag.viewOneTagOpen {
+    margin-bottom: 8px;
+    height: max-content;
+}
+
+
+.viewOnlyTags {
+    color: gray;
+    font-weight: normal;
+}
+
+.viewOnlyTagClicked {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.tagContainer {
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.viewTagContents {
+    pointer-events: visible;
+    animation-name: forumTagListViewAnimation;
+    animation-duration: 0.3s;
+}
+
+@keyframes forumTagListViewAnimation {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.addedTag {
+    display: flex;
+    flex-direction: row;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+.addedTag:hover .tagCloseButton img {
+    visibility: visible;
+}
+
+.tagText {
+    flex: 1;
+}
+
+.tagCloseButton:hover {
+    cursor: pointer;
+}
+
+.tagCloseButton img{
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+    visibility: hidden;
+}
+
+.tagPlusButton:hover {
+    cursor: pointer;
+}
+
+.tagPlusButton img{
+    width: 16px;
+    height: 16px;
+}
+
+.tagAddText {
+    color: #FF0000;
+    margin-left: 8px;
+}
+
+.addTagViewButton:hover {
+    cursor: pointer;
+}
+
+.forYouTagText {
+    margin-top: 24px;
+    color: #FF0000;
+    font-size: 24px;
+}
+
+.tagInfoWrap {
+    flex: 1;
+}
+
+.postWritingBox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.writerProfile {
+    flex-grow: 0;
+}
+
+.writerProfile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.textBoxWrapper {
+    width: 100%;
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+.textBox {
+
+    width: 100%;
+    border-radius: 15px;
+    border-color: #FF0000;
+    border-width: 1px;
+    border-style: solid;
+    min-height: 100px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    outline: none;
+}
+
+.forumTextBoxStyle {
+    border-style: none;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.forumTextBoxStyle:focus {
+    outline: none;
+}
+
+.forumTitleBox {
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+.forumPostTagAdd {
+    margin-top: 16px;
+}
+
+.forumPostTagAdd:hover {
+    cursor: pointer;
+}
+
+.forumTagButtonImage {
+    display: inline-block;
+}
+
+.forumTagButtonImage img {
+
+    width: 24px;
+    height: 24px;
+
+}
+
+.forumTagButtonText {
+
+    display: inline-block;
+    margin-left: 8px;
+    color: #FF0000;
+}
+
+.writingPostTagContainer {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.postingHashTag {
+    display: flex;
+    flex-direction: row;
+    margin-right: 16px;
+}
+
+.postingContentTag {
+    color: #FF0000;
+}
+
+.postingTagDeleteImg {
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.postingTagDeleteImg img {
+    width: 16px;
+    height: 16px;
+    visibility: hidden;
+    margin-bottom: 3px;
+}
+
+.postingTagDeleteImg:hover {
+    cursor: pointer;
+}
+
+.postingHashTag:hover .postingTagDeleteImg img{
+    visibility: visible;
+}
+
+
+.writeForumPostButton {
+    color: white;
+    background-color: #FF0000;
+    border-radius: 15px;
+    padding: 8px 32px;
+    width: max-content;
+    margin-top: 16px;
+    margin-left: auto;
+    /*margin-right: 32px;*/
+}
+
+.writeForumPostButton:hover {
+    cursor: pointer;
+}
+
+.reOrderWrapper {
+    margin-top: 24px;
+}
+
+
+.reOrderButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*align-items: stretch;*/
+    width: 100%;
+}
+
+.orderButton {
+    flex-grow: 1;
+    text-align: center;
+
+    font-weight: normal;
+    color: #282c34;
+
+    transition-property: font-weight, color;
+    transition: all 200ms ease-in-out;
+}
+
+.orderButton.orderClicked {
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.orderButton a {
+
+}
+
+.orderButton:hover {
+    cursor: pointer;
+}
+
+
+
+
+.reOrderBottomLineWrapper {
+    margin-top: 8px;
+}
+
+.bottomRedLine {
+    background-color: none;
+    height: 1px;
+}
+
+.lineBrick {
+    height: 3px;
+    background-color: #FF0000;
+    top: -2px;
+    position: relative;
+    transition: left 200ms ease-in-out;
+}
+
+
+
+.postingWrapper {
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.postItem {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.postUserImage:hover {
+    cursor: pointer;
+}
+
+.postUserImage img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.postContentWrapper {
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+.postTitle {
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+.postMessage {
+    font-size: 16px;
+    margin-top: 8px;
+    word-wrap: break-word;
+    word-break: keep-all;
+    white-space: pre-wrap;
+    line-height: 1.6em;
+}
+
+.postDate {
+    font-size: 16px;
+}
+
+.postHashTagContainer {
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.forumPostTag {
+    margin-right: 16px;
+}
+
+.forumPostTag img {
+    margin-left: 6px;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 3px;
+    visibility: hidden;
+}
+
+.forumPostTag:hover, .forumPostTag:active{
+    cursor: pointer;
+    color: #FF0000;
+}
+
+.forumPostTag:hover img, .forumPostTag:active img{
+    visibility: visible;
+}
+
+.socialIconWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.forumSocialIcon {
+    margin-right: 32px;
+}
+
+.forumSocialIcon:hover {
+    cursor: pointer;
+}
+
+.forumSocialIcon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+
+.forumSocialIconText {
+    margin-left: 8px;
+}
+
+.threeDots {
+    margin-left: auto;
+}
+
+.threeDots:hover {
+    cursor: pointer;
+}
+
+.threeDots img {
+    width: 16px;
+    height: 16px;
+    object-fit: scale-down;
+}
+
+.viewTagsButton {
+    width: 0px;
+    height: 0px;
+    display: none;
+    color: #FF0000;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.viewTagsButton:hover {
+    cursor: pointer;
+}
+
+.viewTagsButton img {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotateImage {
+    transform: rotate(180deg);
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.5); }
+    50% { transform: scale(2)}
+    75% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+.reportBoxRight {
+    float: right;
+    width: 100px;
+}
+
+.reportBox {
+    overflow: hidden;
+    background-color: #FFFFFF;
+
+    z-index: 999;
+    position: absolute;
+
+    text-align: center;
+
+    height: 0;
+    width: 100px;
+
+    border-width: 0px;
+    border-style: solid;
+    border-color: #282c34;
+
+    transition: all 200ms ease-in-out;
+    transition-property: height, border-width;
+}
+
+.reportBox a {
+    /*line-height: 32px;*/
+}
+
+.reportBox.reportHeight {
+    height: max-content;
+    border-width: 1px;
+}
+
+.reportBox:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
+
+    .forumBody {
+        flex-direction: column;
+    }
+
+    .forumTagToggleButton {
+        display: block;
+    }
+
+    .forumLeft {
+        position: absolute;
+        background-color: white;
+        overflow-y: scroll;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 0px;
+        z-index: 99;
+        margin-top: 48px;
+        border-radius: 10px;
+        height: 0px;
+        transition-property: height, padding;
+        transition: 0s ease-in-out;
+    }
+
+    .forumLeft.growforumLeft {
+        padding: 16px;
+        height: max-content;
+    }
+
+    .growViewTagWrapper {
+        padding: 16px;
+        height: max-content;
+    }
+
+    .forumRight {
+        width: 100%;
+    }
+
+    .viewTagsButton {
+        display: block;
+        width: max-content;
+        height: max-content;
+    }
+
+    .writerProfile img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .postTitle {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .postUserImage img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .postingWrapper {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}

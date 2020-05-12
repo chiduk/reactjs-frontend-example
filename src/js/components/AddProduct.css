@@ -1,0 +1,363 @@
+.newProduct {
+    width: 100%;
+    overflow-x: hidden;
+
+    padding: 16px 32px;
+
+
+}
+
+.editProductBody {
+    max-width: 1000px;
+    width: calc(100% - 24px);
+    margin: 0 auto;
+}
+
+
+.newProductImageArrayContainer {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+
+    height: max-content;
+}
+
+.uploadingImageCard {
+    display: inline-block;
+    background-color: #61dafb;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+
+.uploadingImageCard:hover .upLoadingImageDeleteButton img{
+    visibility: visible;
+}
+
+.uploadingImageImage {
+    height: 200px;
+    user-select: none;
+    width: max-content;
+}
+
+.uploadingImageImage img {
+    height: 200px;
+    object-fit: cover;
+    user-select: none;
+}
+
+
+.upLoadingImageDeleteButton {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.upLoadingImageDeleteButton:hover {
+    cursor: pointer;
+}
+
+.upLoadingImageDeleteButton img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    visibility: hidden;
+}
+
+.newProduct .addMoreContentsButtonWrapper {
+    margin-top: 16px;
+    width: max-content;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+}
+
+.addMoreContentsButtonWrapper:hover {
+    cursor: pointer;
+}
+
+.addMoreContentsButtonWrapper:hover .plusButton img {
+    transform: rotate(315deg);
+}
+
+
+
+.plusButton {
+    margin-top: 2px;
+}
+
+.plusButton img {
+    width: 22px;
+    height: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plusButtonText a {
+    margin-left: 8px;
+    line-height: 32px;
+}
+
+.productNameInputWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.productEditInputWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #61dafb;
+}
+
+.productEditInputFlexWrapper {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    flex-shrink: 0;
+}
+
+.productEditInputElement {
+    width: max-content;
+    /*height: max-content;*/
+    margin: auto 8px 8px 0px;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+
+
+.productName {
+    margin-top: 16px;
+    font-size: 28px;
+}
+
+.productInputWrapper {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.productInputWrapper input::-ms-clear {
+    display: none;
+}
+
+.productInputWrapper input {
+    border-style: none;
+}
+
+.optionInputWrapper {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.priceCurrency a {
+    line-height: 40px;
+}
+
+
+
+.priceOption {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.optionDataWrapper {
+    max-width: calc(100% - 16px - 18px);
+    display: flex;
+    flex-direction: row;
+}
+
+.optionNameInput {
+
+    max-width: 100%;
+
+}
+
+.optionNameInput input {
+
+    max-width: 100%;
+    border-style: none;
+    font-size: 22px;
+
+}
+
+.optionPriceInventoryWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.productEditElement {
+
+}
+
+.inventoryNumber {
+    display: flex;
+    flex-direction: row;
+    margin-left: 16px;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.inventoryNumber input {
+    border-style: none;
+
+}
+
+.optionPriceInventoryWrapper input {
+    border-style: none;
+}
+
+.newProduct input[type=number]::-webkit-inner-spin-button,
+.newProduct input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.extraInfo {
+    margin-top: 24px;
+}
+
+.extraShippingcost {
+
+    line-height: 24px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.extraInfoText {
+    line-height: 24px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.optionData a{
+
+    line-height: 26px;
+
+}
+
+.newProduct .optionInputWrapper .priceOption .deleteContentButton {
+    margin-left: 16px;
+}
+
+.newProduct .optionInputWrapper .priceOption .deleteContentButton img {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+}
+
+.newProduct .addMoreContentsButtonWrapper {
+    margin-top: 24px;
+}
+
+.productDescriptionImageContainer {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.productDescriptionImageWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.productDescriptionImage img {
+    object-fit: cover;
+    width: calc(100% - 16px - 24px);
+
+}
+
+.productDescriptionImageDelete img {
+
+    margin-left: 16px;
+    width: 24px;
+    height: 24px;
+    transform: rotate(45deg);
+
+}
+
+.productDescriptionImageDelete img:hover {
+    cursor: pointer;
+}
+
+.productDescriptionTextInput {
+    font-size: 20px;
+    margin-top: 24px;
+    width: 100%;
+    border-style: none;
+}
+
+.productDescriptionTextInput:focus {
+    outline: none;
+}
+
+.newProduct .addedHashtagContainer {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.newProduct .addButton {
+    border-radius: 15px;
+
+    margin-top: 16px;
+    color: white;
+    background-color: #FF0000;
+    width: 7%;
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+.newProduct .saveButton {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+
+    text-align: center;
+    background-color: #FF0000;
+    color: white;
+    width: 10%;
+
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    border-radius: 15px;
+}
+
+.newProduct .saveButton a {
+    font-size: 22px;
+}
+
+@media (max-width:700px ) {
+
+    .editProductBody {
+        width: 100%;
+    }
+
+    .productEditElement {
+        background-color: #61dafb;
+        width: 100%;
+    }
+
+}

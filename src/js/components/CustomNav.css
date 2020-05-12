@@ -1,0 +1,282 @@
+
+.navLogoImage {
+    width: 120px;
+    height: 40px;
+    object-fit: scale-down;
+    font-family: 'object-fit: scale-down;';
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #282c34;
+    font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FF0000;
+}
+
+.navbar-light .navbar-nav .nav-link:active {
+    font-weight: bold;
+    color: #FF0000;
+}
+
+
+.navbar-light .navbar-nav .nav-link:focus {
+    outline: none;
+}
+
+.leftBarItem {
+    object-fit: scale-down;
+    font-family: 'object-fit: scale-down;';
+    width: 40px;
+    height: 40px;
+}
+
+.nav-link img {
+    object-fit: scale-down;
+    width: 30px;
+    height: 30px;
+}
+
+.navItemWrapper {
+    visibility: visible;
+    width: max-content;
+    height: max-content;
+}
+
+.navHamburg {
+
+    width: 0px;
+    height: 0px;
+    margin-right: 0px;
+    visibility: hidden;
+
+}
+
+.navToggleView {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    /*visibility: hidden;*/
+    right: -200px;
+    transition: right 0.3s ease-in-out;
+    background-color: white;
+    z-index: 999999999;
+    display: none;
+    overflow-y: scroll;
+}
+
+.navToggleViewClicked {
+    right: 0px;
+    /*visibility: visible;*/
+
+}
+
+.navToggleButtonWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.logInInfoWrapper {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+.logInInfoWrapper:hover .logOut{
+    visibility: visible;
+}
+
+.responsiveLogout {
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+.logOut {
+    position: absolute;
+    margin-top: 0px;
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    z-index: 9;
+    visibility: hidden;
+}
+
+/*.navToggleButtonWrapper .navItem {*/
+
+/*    padding: 16px;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+
+/*}*/
+
+.homeLogInButton {
+    font-size: 16px;
+}
+
+.homeLogInButton .logInButton {
+    background-color: transparent;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.logInButton a {
+    font-weight: bold;
+    height: max-content;
+    width: max-content;
+}
+
+.navActionItem {
+    color: #3B3B3B;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.navActionItem:hover {
+    cursor: pointer;
+    color: #FF0000;
+}
+
+.navActionItem img {
+    width: 28px;
+    height: 28px;
+    object-fit: scale-down;
+    margin-left: auto;
+    margin-top: 4px;
+    margin-bottom: auto;
+}
+
+.navItemWrapper {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+}
+
+.navCountNum {
+    background-color: #FF0000;
+    color: white;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-bottom: auto;
+    right: 5px;
+    position: relative;
+    width: max-content;
+    font-size: 14px;
+    text-align: center;
+}
+
+.navCountNumForIE {
+    background-color: #FF0000;
+    color: white;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-bottom: auto;
+    right: 5px;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+
+}
+
+.responsiveNavCount {
+
+    background-color: #FF0000;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    border-radius: 25px;
+
+    margin-left: 4px;
+    margin-top: 5px;
+    margin-bottom: auto;
+
+    width: max-content;
+    height: max-content;
+
+    line-height: 28px;
+    font-size: 14px;
+
+}
+
+
+@media (max-width: 810px) {
+
+    .navItemWrapper {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    .navHamburg {
+        width: max-content;
+        height: max-content;
+        margin-right: 8px;
+        visibility: visible;
+    }
+
+    .navHamburg:hover {
+        cursor: pointer;
+    }
+
+    .navHamburg img{
+        width: 32px;
+        height: 32px;
+        object-fit: scale-down;
+    }
+
+    .navToggleView {
+        display: block;
+    }
+
+    .navBackgroudBlurView {
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #3B3B3B;
+        opacity: 0;
+        position: fixed;
+        z-index: 999;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .navBackgroudBlurViewAnimate {
+        display: block;
+        opacity: 0.5;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navLogoImage {
+        width: 80px;
+        height: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+

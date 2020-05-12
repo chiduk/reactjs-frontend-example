@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="285.382" height="98" viewBox="0 0 285.382 98">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="285.382" height="98" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="home" clip-path="url(#clip-path)">
+    <text id="STELLAR_SHOP" data-name="STELLAR
+SHOP" transform="translate(109.382 42)" fill="red" font-size="47" font-family="PTSans-Bold, PT Sans" font-weight="700"><tspan x="0" y="0">STELLAR</tspan><tspan x="0" y="43">SHOP</tspan></text>
+    <g id="logo" transform="translate(-28.618 -30)">
+      <path id="Path_1" data-name="Path 1" d="M30.358,76,53.771,36.254H94.011L118.936,76,94.011,116H53.771Z" fill="none" stroke="red" stroke-width="3"/>
+      <line id="Line_4" data-name="Line 4" y1="79" x2="41" transform="translate(53.5 36.5)" fill="none" stroke="red" stroke-width="3"/>
+      <line id="Line_5" data-name="Line 5" x1="40" y1="79" transform="translate(53.5 36.5)" fill="none" stroke="red" stroke-width="3"/>
+      <line id="Line_6" data-name="Line 6" x2="43" transform="translate(30.5 76.5)" fill="none" stroke="red" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

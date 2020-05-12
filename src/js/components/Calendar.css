@@ -1,0 +1,157 @@
+.calendarWrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    border-radius: 25px;
+    background-color: white;
+    max-width: 600px;
+    width: 90%;
+    height: 500px;
+
+    padding-bottom: 32px;
+    /*max-height: 464px;*/
+    /*height: 70%;*/
+}
+
+.closeCalendar {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: 16px;
+    color: #FF0000;
+    width: 10%;
+}
+
+.todayDate {
+    white-space: nowrap;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 8px;
+    width: 40%;
+
+    font-size: 24px;
+}
+
+.calendarWrapper .weekWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.weekDayCellWrapper {
+    margin-top: 4px;
+    /*max-height: 320px;*/
+    /*height: 50%;*/
+}
+
+.calendarWrapper .weekTop {
+    background-color: tomato;
+}
+
+.calendarWrapper .weekDayText {
+    color: white;
+    font-size: 22px;
+    width: calc(100%/7);
+    text-align: center;
+}
+
+.dayCell {
+    height: 50px;
+}
+
+.dayCell:hover {
+    cursor: pointer;
+}
+
+.todayDateCell {
+    background-color: #61dafb;
+    border-radius: 25px;
+}
+
+.calendarWrapper .dayCellText {
+    color: #282c34;
+    line-height: 50px;
+}
+
+.calendarWrapper .inactiveCell {
+    color: grey;
+    pointer-events: none;
+}
+
+.calendarWrapper .dateSelected {
+    background-color: #FF0000;
+    color: white;
+}
+
+.calendarWrapper .selectedDateFirst {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.calendarWrapper .selectedDateLast {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.calendarWrapper .arrow:hover {
+    cursor: pointer;
+}
+
+.calendarArrowWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+
+.calendarArrowWrapper .arrow {
+
+    width: 30px;
+    height: 30px;
+}
+
+.calendarArrowWrapper .arrow img{
+    width: 30px;
+    height: 30px;
+    object-fit: scale-down;
+}
+
+
+.monthStatus {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3B3B3B;
+}
+
+.dateSubmit {
+    white-space: nowrap;
+    background-color: tomato;
+    border-radius: 25px;
+    color: white;
+    width: 15%;
+    padding: 8px 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dateSubmit:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .todayDate {
+        font-size: 16px;
+    }
+
+    .monthStatus {
+        font-size: 16px;
+    }
+
+}

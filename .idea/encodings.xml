@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/niceid/bankVerification/input.php" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/niceid/bankVerification/request.php" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/niceid/idVerification/checkplus_fail.php" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/niceid/idVerification/checkplus_main.php" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/niceid/idVerification/checkplus_success.php" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/nicepay/mobile/payRequest.php" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/nicepay/mobile/payResult.php" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/nicepay/pc/payRequest.php" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/nicepay/pc/payResult.php" charset="EUC-KR" />
+  </component>
+</project>

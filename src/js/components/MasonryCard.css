@@ -1,0 +1,337 @@
+.grid-sizer {
+    width: calc((100%/3) - 24px);
+}
+
+.masonryCard {
+    width: calc((100%/3) - 24px);
+    /*width: calc((100%/3) - 32px);*/
+    overflow: visible;
+    /*object-fit: cover;*/
+
+    margin-bottom: 32px;
+}
+
+.masonryCardStyle {
+    padding-bottom: 16px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 17px 0 rgba(0, 0, 0, 0.08);
+}
+
+/*.cardContainer {*/
+/*    !*padding-top: 8px;*!*/
+
+/*}*/
+
+.feedProfileContainer {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    align-items: stretch;
+    height: 40px;
+    justify-content: flex-start;
+
+}
+
+.feedProfileContainer:hover {
+    cursor: pointer;
+}
+
+.feedProfileImage{
+    flex-grow: 0;
+}
+
+.feedProfileImage img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.feedUserName {
+    flex-grow: 2;
+    margin-left: 8px;
+    line-height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.feedUserName a {
+    font-weight: bold;
+}
+
+.followButton {
+    flex-grow: 0;
+    height: 40px;
+    vertical-align: center;
+    align-content: center;
+    line-height: 40px;
+}
+
+.feedImage {
+    margin-top: 8px;
+    width: 100%;
+    overflow: hidden;
+
+    image-orientation: from-image;
+}
+
+.feedImage img {
+    width: 100%;
+    object-fit: fill;
+    font-family: 'object-fit: fill;';
+    margin-right: auto;
+    margin-left: auto;
+
+    image-orientation: from-image;
+}
+
+.feedImage video {
+    width: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    margin-right: auto;
+    margin-left: auto;
+
+    image-orientation: from-image;
+}
+
+.feedImage:hover {
+    cursor: pointer;
+}
+
+.feedImageWithEXIF {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: max-content;
+}
+
+.feedImageWithEXIF img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /*height: 100%;*/
+    object-fit: scale-down;
+
+}
+
+.contentContainer {
+
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.contentContainer iframe {
+
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+
+
+    position: relative;
+}
+
+.contentContainer {
+
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    word-break: break-word;
+
+}
+
+
+.feedTitle {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.feedTitle:hover {
+    cursor: pointer;
+}
+
+.feedMessage {
+    margin-top: 8px;
+}
+
+.feedMessage:hover {
+    cursor: pointer;
+}
+
+.feedMessage p {
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*width: 100%;*/
+    /*max-height: 2em;*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*word-break: break-word;*/
+    /*line-height: 1em;*/
+
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*width: 100%;*/
+    /*max-height: 2em;*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*word-break: break-word;*/
+    /*line-height: 1em;*/
+}
+
+.feedHashTagContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    word-break: keep-all;
+    margin-top: 8px;
+}
+
+.masonryFeedHashTag {
+    margin-right: 4px;
+}
+
+.feedHashTag {
+
+}
+
+.socialFunctionContainer {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    height: 24px;
+    /*align-items: start;*/
+}
+
+.socialButton {
+    width: max-content;
+    height: 24px;
+}
+
+.socialButton:hover {
+    cursor: pointer;
+}
+
+.socialButton img {
+    height: 24px;
+    width: 24px;
+    object-fit: scale-down;
+}
+
+.socialButton a {
+    margin-left: 8px;
+}
+
+.commentButton {
+    margin-left: 24px;
+}
+
+.feedSaveButton {
+    margin-left: auto;
+    /*text-align: right;*/
+}
+
+.feedOptionButton {
+    width: 15px;
+    height: 24px;
+    position: relative;
+    right: -4px;
+}
+
+.feedOptionButton:hover {
+    cursor: pointer;
+}
+
+.feedOptionButton img{
+    width: 15px;
+    height: 24px;
+    object-fit: scale-down;
+    font-family: 'object-fit: scale-down;';
+    transform: rotate(90deg);
+}
+
+.masonryCard .reportBoxRight{
+    /*margin-left: auto;*/
+    width: max-content;
+    height: max-content;
+
+}
+
+.masonryCard .reportBoxRight .reportBox {
+    width: 0px;
+    height: 0px;
+
+    /*max-width: 0px;*/
+    /*max-width: 0px;*/
+
+    margin-top: 8px;
+    position: absolute;
+    right: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transition-property: width, height;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+.masonryCard .reportBoxRight .reportBox.optionBoxGrow {
+    /*max-width: 1000px;*/
+    /*max-width: 1000px;*/
+
+    width: max-content;
+    height: max-content;
+}
+
+.masonryCard .optionButton {
+
+    width: 100%;
+    height: max-content;
+    font-size: 18px;
+    padding: 8px 16px;
+
+
+}
+
+.masonryCard .optionButton img {
+    width: 18px;
+    height: 18px;
+    object-fit: scale-down;
+    margin-right: 8px;
+    margin-left: 16px;
+    margin-top: 5px;
+}
+
+.optionButtonLine {
+    width: 100%;
+    height: 1px;
+    background-color: #bcbcbc;
+}
+
+@media (max-width: 970px) {
+    .grid-sizer {
+        width: calc((100%/2) - 24px);
+    }
+
+    .masonryCard {
+        width: calc((100%/2) - 24px);
+    }
+}
+
+@media (max-width: 700px) {
+    .grid-sizer {
+        width: 100%;
+    }
+
+    .masonryCard {
+        width: 100%;
+    }
+
+}

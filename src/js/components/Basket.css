@@ -1,0 +1,606 @@
+.basketBody {
+    max-width: 1000px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.basketTitle {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.billingDetailTitle {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.billingDetailInputContainer {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.billingDetailInput{
+    width: 50%;
+    border-width: 1px;
+    padding: 4px 8px;
+    border-color: grey;
+    border-style: solid;
+
+}
+
+.billingDetailInputRight{
+    width: 48%;
+    margin-left: 2%;
+    margin-right: 0;
+    border-width: 1px;
+    padding: 4px 8px;
+    border-color: grey;
+    border-style: solid;
+
+}
+
+
+.basketWarning {
+    font-size: 14px;
+    margin-top: 8px;
+    background-color: #E2E2E2;
+    padding: 8px 8px;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+li {
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    white-space:normal;
+    /*word-wrap:break-word;*/
+}
+
+.basketLine {
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    margin-top: 16px;
+}
+
+.basketTable {
+    margin-top: 16px;
+    /*grid-template-columns:*/
+    /*        minmax(40px, 1fr)*/
+
+    /*        minmax(350px, 1fr)*/
+
+    /*        minmax(70px, 1fr)*/
+    /*        minmax(100px, 1fr)*/
+
+    /*        minmax(100px, 1fr)*/
+    /*        minmax(100px, 1fr)*/
+    /*        minmax(100px, 1fr)*/
+
+    /*        minmax(140px, 1fr);*/
+    width: 100%;
+}
+
+.basketBody th {
+    font-size: 14px;
+}
+
+.basketItemWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.tableTopBox {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: black;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+}
+
+.allCheckBox {
+    margin-left: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: black;
+}
+
+.allCheckBoxText {
+    margin-left: 8px;
+}
+
+.checkBox {
+
+}
+
+.basketOrderInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    width: 100%;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.basketBody .finalAmountLine {
+    width: 100%;
+    height: 2px;
+    background-color: #3b3b3b;
+}
+
+.orderPageBasket {
+    margin-left: 0px;
+}
+
+
+
+.orderInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.orderInfo input {
+
+    width: 40px;
+    margin-left: 16px;
+}
+
+.basketItemWrapper input[type=number]::-webkit-inner-spin-button,
+.basketItemWrapper input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.orderData {
+    margin-left: auto;
+}
+
+.basketBody .productInfo {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+.basketBody .productInfoImg {
+    width: 100px;
+    height: 100px;
+}
+
+.basketBody .productInfoImg img{
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+    width: 100px;
+    height: 100px;
+}
+
+.basketBody .productInfoText {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.basketBody .basketButtonFlex {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+}
+
+.basketTableButton:first-child {
+    margin-right: 8px;
+}
+
+.basketTableButton {
+    color: white;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    /*border-radius: 25px;*/
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    flex: 1;
+    background-color: black;
+}
+
+.basketTableButton:hover {
+    cursor: pointer;
+    background-color: tomato;
+    color: white;
+}
+
+.selectButtonWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    margin-right: auto;
+    margin-left: 32px;
+    margin-bottom: 24px;
+
+    width: 100%;
+    max-width: 300px;
+}
+
+.basketFinalAmount {
+    color: white;
+    background-color: #FF0000;
+}
+
+.basketBody td.emptyCell {
+    width: 100%;
+    height: 100%;
+    background-color: #FF0000;
+}
+
+.basketOrderPaymentAmount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+#redCell {
+    background-color: #FF0000;
+    color: white;
+}
+
+
+.finalAmountWrapper {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    background-color: white;
+    color: #3B3B3B;
+
+    margin-left: auto;
+    margin-top: 32px;
+}
+
+.finalAmountDiv {
+    width: max-content;
+    font-size: 20px;
+}
+
+.finalAmountDiv:last-child {
+    margin-left: 48px;
+}
+
+.basketBody .orderInfoSellerInfo {
+    margin-top: 16px;
+}
+
+.lineBeforePurchasingItem {
+    margin-top: 4px;
+    margin-bottom: 32px;
+}
+
+.calculatedAmountText {
+    margin-bottom: 8px;
+}
+
+.calculatedAmount {
+    text-align: right;
+}
+
+.basketBody .orderButton {
+    width: max-content;
+    padding: 8px 32px;
+
+    background-color: black;
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 16px;*/
+    margin-bottom: 32px;
+
+
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.lastOrderButton {
+    margin-top: 48px;
+}
+
+.lienBelowFinalAmount {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.lineAboveAddressSelected {
+    margin-top: 32px;
+}
+
+.basketBody .orderButton:hover {
+    cursor: pointer;
+    /*background-color: tomato;*/
+    /*color: white;*/
+}
+
+.orderProcess {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.orderStepWrapper {
+    margin-top: 8px;
+    margin-bottom: auto;
+
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+
+    width: max-content;
+
+}
+
+.orderStep {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.orderStep img{
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    margin-bottom: 3px;
+}
+
+.orderStep:last-child {
+    margin-right: 0px;
+}
+
+.orderTable {
+    margin-top: 16px;
+    grid-template-columns:
+
+            minmax(350px, 1fr)
+            minmax(70px, 1fr)
+            minmax(100px, 1fr)
+
+            minmax(100px, 1fr)
+            minmax(100px, 1fr)
+            minmax(100px, 1fr)
+
+            minmax(140px, 1fr);
+}
+
+.shippingAddressSelect {
+    margin-top: 16px;
+}
+
+.shippingAddressSelectButtonWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.addressListSelectButton {
+    margin-right: 32px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: max-content;
+}
+
+.shippingInfoEditButtonWrapper {
+    /*flex: 1;*/
+}
+
+.addNewAddressButton {
+    border-radius: 25px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 0px 16px;
+    color: black;
+    width: max-content;
+}
+
+.addNewAddressButton:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.addressSelectLine {
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.addNewAddressButtonAlignRight {
+    margin-top: 12px;
+}
+
+.addressInfoWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.requestWrapper {
+    margin-top: 8px;
+    padding-right: 8px;
+    max-width: 500px;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.requestWrapper img {
+    width: 32px;
+    height: 32px;
+    object-fit: scale-down;
+    font-family: 'object-fit: scale-down;';
+}
+
+.requestWrapper img:hover {
+    cursor: pointer;
+}
+
+.requestInput {
+    max-width: 500px;
+    width: 100%;
+    padding: 4px 8px;
+    border: none;
+}
+
+.requestSelectContainer {
+
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    max-height: 0px;
+    background-color: white;
+    overflow: hidden;
+
+    border-width: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-color: grey;
+    border-style: solid;
+
+    border-top: none;
+
+    transition-property: max-height;
+    transition: 0.5s ease-in-out;
+}
+
+.requestSelectContainerOpen {
+    max-height: 1000px;
+    border-bottom-width: 1px;
+
+}
+
+
+
+.requestSelectContainerClose {
+    max-height: 0px;
+    border-bottom-width: 0px;
+}
+
+.selectPaymentWrapper:hover {
+    cursor: pointer;
+}
+
+
+.requestSelectOption {
+
+    padding: 4px 8px;
+
+}
+
+.requestSelectOption:hover {
+    cursor: pointer;
+}
+
+.orderCompletedMessage {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 32px;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+.orderCompletedMessage img {
+    width: 50px;
+    height: 50px;
+}
+
+.orderCompletedMessage a {
+    margin-left: 16px;
+}
+
+.continueShopping {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FF0000;
+    border-radius: 30px;
+    width: 25%;
+    height: 55px;
+    margin: 32px auto 48px;
+    font-size: 24px;
+    text-align: center;
+    padding: 8px 16px;
+    color: #FF0000;
+
+}
+
+.continueShopping:hover {
+    cursor: pointer;
+    background-color: #FF0000;
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    .finalAmountWrapper {
+        width: 100%;
+    }
+
+    .addressInfoWrapper {
+        width: 100%;
+    }
+
+    .selectButtonWrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .addNewAddressButtonAlignRight {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .basketBody .orderButton {
+        width: 100%;
+    }
+
+    .finalAmountDiv {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .finalAmountDiv:last-child {
+        margin-left: 16px;
+    }
+
+    .basketOrderPaymentAmount {
+        font-size: 16px;
+    }
+
+}
+
+
+
+

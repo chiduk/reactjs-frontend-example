@@ -1,0 +1,41 @@
+
+.forYouFeedCard {
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    flex-shrink: 0;
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    margin-right: 32px;
+
+    width: 400px;
+    height: max-content;
+    max-height: 600px;
+
+    padding-bottom: 16px;
+
+    position: relative;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.forYouFeedCard:last-child {
+    margin-right: 0px;
+
+}
+
+.productDetailForYouImage {
+    /*height: 100%;*/
+}
+
+.productDetailForYouImage img{
+    width: 100%;
+    object-fit: cover;
+}
